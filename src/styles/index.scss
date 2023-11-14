@@ -1,0 +1,53 @@
+//引入清除默认样式
+@import './reset.scss';
+
+// 美化滚动条
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    width: 6px;
+    background: rgba(#101F1C, 0.1);
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 147, 153, .5);
+    background-clip: padding-box;
+    min-height: 28px;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(144, 147, 153, .3);
+}
+
+body {
+    transition: all 1s !important;
+    background-size: $base-index-background-size;
+    // overflow: hidden;
+    @include background_image("themeBackgroundImage");
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+
+}
+
+//加载字体
+@font-face {
+    font-family: 'presentanthem-z86w1';
+    src: url(../assets/fonts/presentanthem-z86w1.ttf);
+}
+
+@font-face {
+    font-family: 'mashanzhengmaobikaishu';
+    src: url(../assets/fonts/mashanzhengmaobikaishu.ttf);
+}
