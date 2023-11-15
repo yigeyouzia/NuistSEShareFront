@@ -10,7 +10,6 @@ const request = axios.create({
     'Content-Type': 'application/json; charset=utf-8',
   },
   baseURL: import.meta.env.VITE_APP_BASE_API, // 基础路径上会携带/api
-  // baseURL: 'https://share.mypikpak.buzz/api', // 基础路径上会携带/api
   timeout: 5000, // 超时的时间的设置
 })
 
