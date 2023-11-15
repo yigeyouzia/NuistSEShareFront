@@ -1,4 +1,7 @@
 // 该服务为 vercel serve跨域处理
+import { createRequire } from 'node:module'
+
+const require = createRequire(import.meta.url)
 const {
   createProxyMiddleware,
 } = require('http-proxy-middleware')
